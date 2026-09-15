@@ -1,0 +1,11 @@
+# This project-path file is NOT the effective robots.txt on GitHub Pages.
+# Crawlers read https://ataraxia-min.github.io/robots.txt instead.
+# See ops/robots-root.txt and SEARCH-REVIEW.md for root policy and verification.
+# This file is ready for a future dedicated-domain deployment.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ataraxia-min.github.io/lucky-kart-site/sitemap.xml
