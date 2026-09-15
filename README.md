@@ -1,9 +1,11 @@
 # Lucky Kart official website
 
-A small, English-first website for the Roblox kart racing game Lucky Kart.
+A small, English-first website for the Roblox game Lucky Kart Racing (Lucky Kart).
 
 **Project:** https://github.com/ataraxia-min/lucky-kart-site  
-**Intended public URL:** https://ataraxia-min.github.io/lucky-kart-site/
+**Public website:** https://ataraxia-min.github.io/lucky-kart-site/
+
+**Roblox game:** https://www.roblox.com/games/84170027522482/Lucky-Kart-Racing
 
 Publication status is recorded in `DEPLOYMENT.md` after verification. A prepared URL is not evidence that a site is live.
 
@@ -21,9 +23,11 @@ Start with [HANDOFF.ko.md](HANDOFF.ko.md), [CONTENT-TODO.md](CONTENT-TODO.md), a
 
 ## Content standard
 
-Only the name, Roblox platform and kart-racing genre are presently treated as facts supplied by the owner. The exact experience, gameplay, prices, ages and safety settings have not been independently verified. Missing material is visibly labeled, and unknown claims are omitted from structured data. There are no invented screenshots, ratings, testimonials or player counts.
+The owner's Roblox link resolves to Lucky Kart Racing, place ID 84170027522482. The official listing supplies the promotional artwork, gameplay description, PC/mobile controls and public voice/camera status. These are listing-based facts, not an independent playtest. See [CONTENT-SOURCES.md](CONTENT-SOURCES.md) for evidence and limitations.
 
-The decorative track is CSS artwork, not a gameplay image. Actual child audio/video from earlier conversations is not included. Add privacy-reviewed game captures later.
+The listing displayed **Minimal content maturity · Ages 16+** on 2026-09-15. Do not turn Minimal into an all-ages or child-safety claim. Check Creator Hub Audience Reach before attempting to promote the game for younger children. Text chat, purchases, data handling and actual device performance remain unverified.
+
+The hero and social preview use the listing's promotional artwork, explicitly captioned. Actual gameplay captures and a guardian-approved creator story remain pending. No child audio/video, fabricated screenshots, ratings, testimonials or popularity counts are included.
 
 ## Search access
 

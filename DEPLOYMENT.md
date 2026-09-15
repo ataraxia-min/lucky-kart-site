@@ -7,9 +7,15 @@ Verified on **2026-09-15**.
 - **Owner:** ataraxia-min (explicitly selected by the user).
 - **GitHub Pages source:** `main` branch, `/docs` folder, “Deploy from a branch”.
 - **HTTPS:** enforced by GitHub Pages on the default domain.
-- **Website source commit:** `454a7f3958f4e1476367bfb9d57cb5e310b67ae3`.
-- **Verified successful Pages run:** https://github.com/ataraxia-min/lucky-kart-site/actions/runs/34931360473
-- That run returned `status: completed`, `conclusion: success`; its head was `36a048d720c1f1c38428ae114d89b518aaca0de0`, which contains the same public website files. Subsequent handoff/tool documentation commits do not change the homepage and assets reviewed here. The managed GitHub workflow emitted a non-blocking Node.js 20 action deprecation warning; the deployment succeeded.
+- **Website source commit:** `e0bdbc785adaa9682fe7f43b6e7e6dc930cb162d`.
+- **Verified successful Pages run:** https://github.com/ataraxia-min/lucky-kart-site/actions/runs/34933423487
+- That run returned `status: completed`, `conclusion: success`, with the website source commit above. The preceding artwork commit `d3fa1a70d36cd121c2af181781d8c75b21ac7fc6` is included. Later maintenance-document and checking-script updates do not change these reviewed public files.
+
+## Roblox content update
+
+The site now includes the verified game URL, official promotional artwork, described features, PC/mobile controls and observed parent information. The listing shows **Minimal content maturity · Ages 16+**; this does not establish suitability or normal availability for younger children. Evidence and remaining checks are in CONTENT-SOURCES.md and CONTENT-TODO.md.
+
+The updated HTML, CSS and artwork all returned HTTP 200 and matched local SHA-256 hashes. The published image loaded at its actual 767 × 432 size in the browser. The updated local site passed `npm run check`, JavaScript syntax checking, mobile width checks at 390px and 320px, and `git diff --check`.
 
 ## Checks performed
 
@@ -17,10 +23,10 @@ Verified on **2026-09-15**.
 | --- | --- |
 | GitHub Pages settings | “Your site is live” with the public URL |
 | Public homepage | HTTP 200, `text/html; charset=utf-8` |
-| Public HTML, CSS, JavaScript, sitemap and project robots.txt | All HTTP 200; SHA-256 hashes match the local reviewed files |
+| Public HTML, CSS and artwork | HTTP 200 and SHA-256 match after the Roblox update; unchanged JavaScript, sitemap and project robots.txt passed the same checks at initial launch |
 | Crawl directives | No noindex in the HTML and no X-Robots-Tag in the homepage response headers |
 | Canonical / Open Graph URL / sitemap | Consistent HTTPS project URL |
-| VideoGame JSON-LD | Valid JSON; name, description, platform and genre match visible text; no invented prices, ratings or age claims |
+| VideoGame JSON-LD | Valid JSON; exact game name and visible description; official Roblox sameAs; hosted artwork matches social metadata; no invented prices, ratings or age claims |
 | Internal links and assets | All local references and section targets exist |
 | JavaScript | Syntax check passed; body content and FAQ answers are already in static HTML |
 | Browser review | Desktop plus 390px and 320px widths; no horizontal page overflow at either mobile width; parent table readable |
@@ -31,7 +37,7 @@ The `/lucky-kart-site/robots.txt` copy is **not** the effective host-root file. 
 
 ## Not yet completed or established
 
-- Real Roblox experience link, gameplay, child suitability and safety facts: pending the material listed in CONTENT-TODO.md.
+- Actual playtesting, child suitability, Audience Reach status, text chat, purchases and data use: pending the material listed in CONTENT-TODO.md. Public listing facts are distinguished from playtested facts.
 - Google Search Console / Bing Webmaster Tools verification and sitemap submission: not performed; owner account access is needed.
 - Actual Google/Bing indexing, OAI-SearchBot crawl, citations, traffic and AI recommendations: not observed or promised.
 - Accessibility certification, testing every device and checking access from OpenAI's published IP ranges: not performed. Browser and HTTP checks have the scope described above.

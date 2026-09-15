@@ -4,7 +4,7 @@ Reviewed: **2026-09-15**. This review distinguishes official documentation from 
 
 ## Conclusion
 
-The site can provide a crawlable, consistent source of facts about Lucky Kart. It cannot ensure indexing, citations, higher rankings or recommendations. The current evidence is not sufficient to recommend the game to children: the experience URL, content maturity, social features, purchases and gameplay still require verification.
+The site can provide a crawlable, consistent source of facts about Lucky Kart Racing. It cannot ensure indexing, citations, higher rankings or recommendations. The official Roblox listing now supplies the exact identity, link, artwork, described features and controls. It displayed **Minimal content maturity · Ages 16+** on the review date. This is not sufficient evidence to recommend the game to younger children; audience access, actual gameplay, remaining social features and purchases need review. See CONTENT-SOURCES.md.
 
 ## OpenAI: official requirements and limits
 
@@ -19,13 +19,13 @@ Our implementation uses native headings, links, table headers and details/summar
 | Original idea | Current decision |
 | --- | --- |
 | “Family-friendly”, ages 7–10, easy controls, short races, non-violent | Omitted as unverified claims. Public safety rows state uncertainty. |
-| Prominent Play / Watch buttons | No fake destination or disabled promotional CTA. Play URL and real footage remain clearly pending. |
+| Prominent Play / Watch buttons | Play buttons now point to the verified Roblox game. A video button remains absent until actual footage exists. |
 | Young creator story | Clearly labeled placeholder until parent-approved facts and role are supplied. No personal child information or media published. |
-| VideoGame schema | Minimal JSON-LD using owner-provided name, platform and genre; exact website URL and visible description. No ratings, reviews, prices, age range, release date, false safety field, invented author or unverified sameAs. |
+| VideoGame schema | Exact Roblox name, shorthand alternateName, platform, genre, visible description, official sameAs and actual artwork image. No invented ratings, reviews, prices, age range, release date, safety claim or author. |
 | FAQ as an important search lever | Useful visible answers retained. No claim of a special ChatGPT ranking mechanism. No FAQPage markup added merely for a rich result. |
 | robots.txt in project folder | File retained with a scope warning. Effective rules must be checked at origin root; see below. |
 | Game version/update history | Initial date describes the website only. No invented game version. |
-| Images/video | Clearly marked placeholders, no fabricated gameplay. Social image metadata remains absent until a real approved asset exists. |
+| Images/video | Actual Roblox promotional artwork used in the hero and social metadata, explicitly captioned. Real gameplay captures remain pending. |
 | Keyword phrases for kids | No artificial repetition or “best” claims. Plain game identity and parent questions. |
 
 ## GitHub Pages and robots.txt
@@ -44,7 +44,7 @@ If a user-site repository already serves the root, merge the narrow policy in `o
 
 ## Remaining work and verification limits
 
-1. Supply and verify the real experience and safety evidence in CONTENT-TODO.md.
+1. Review outstanding audience-access and safety evidence in CONTENT-TODO.md. A Minimal label is not an all-ages access guarantee; verify Creator Hub Audience Reach before promotion to younger children.
 2. Verify publicly accessible HTML, assets, sitemap, absence of noindex/auth gates and effective root robots policy after deployment. Record actual results in DEPLOYMENT.md.
 3. Verify ownership in Google Search Console and Bing Webmaster Tools using the owner's accounts, then submit the sitemap. This is not yet completed. A sitemap is a discovery hint, not an indexing guarantee.
 4. Link the site from the correct Roblox listing and consistent official profiles. Genuine independent reviews may add useful evidence; their effect on AI ranking is not guaranteed or quantified here.
