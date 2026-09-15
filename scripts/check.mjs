@@ -23,6 +23,17 @@ assert.equal(graph['@id'], `${canonical}#game`);
 assert.ok(html.includes(graph.description), 'Structured description appears in visible content');
 for (const field of ['name', 'genre', 'gamePlatform']) assert.ok(html.includes(graph[field]));
 assert.doesNotMatch(JSON.stringify(graph), /TODO|PLACEHOLDER|example\.com/);
+assert.equal(new URL(graph.sameAs).hostname, 'www.roblox.com');
+assert.ok(html.includes(`href="${graph.sameAs}"`), 'Game identity links to the visible Roblox destination');
+const socialImage = html.match(/property="og:image" content="([^"]+)"/)[1];
+assert.equal(graph.image, socialImage, 'Schema and social preview use the same artwork');
+assert.ok(socialImage.startsWith(canonical), 'Social preview is hosted with the website');
+await access(new URL(socialImage.slice(canonical.length), root));
+for (const match of html.matchAll(/<img\b[^>]*>/g)) {
+  assert.match(match[0], /alt="[^"]+"/, 'Game images have descriptive alternatives');
+  assert.match(match[0], /width="\d+"/);
+  assert.match(match[0], /height="\d+"/);
+}
 for (const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
   const target = match[1];
   if (target.startsWith('#')) assert.ok(ids.includes(target.slice(1)), `Existing anchor: ${target}`);
@@ -34,5 +45,6 @@ for (const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
 await access(new URL('.nojekyll', root));
 assert.match(html, /<caption>/);
 assert.match(html, /<summary>/);
-assert.match(html, /age suitability has not yet been verified/);
+assert.match(html, /Content maturity &amp; age access/);
+assert.doesNotMatch(html, /Roblox play link: awaiting verification|verified Roblox experience link has not yet been added/);
 console.log('PASS: metadata, canonical and sitemap consistency, VideoGame JSON, visible claims, local assets and anchors, parent information, static FAQ and Pages entrypoint.');
