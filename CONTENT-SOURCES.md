@@ -1,5 +1,38 @@
 # Roblox content sources
 
+## Publication status — 2026-09-15
+
+The continuation below is now published with explicit user approval. Source commit c729b111c043dac8b45ff4537e5f0d7003dfffb5; successful Pages run34981263388. The local draft/not-yet-published labels below describe the earlier review stage.
+
+
+## Local continuation — 2026-09-15 (not yet published)
+
+This section supersedes conflicting observations below. The current Roblox Korean listing was read in a browser and visually inspected: **Minimal · Ages 16+**, server size **8**, **voice chat supported**, **camera supported**. The earlier “Not Supported” observation is no longer current. No account settings were changed. Actual social feature use has not been tested.
+
+### Gameplay media
+
+- Source: the owner's existing `assets/promo/2026-09-15` package in the game workspace, built from a 2026-09-14 gameplay recording. Its generator and timeline were inspected, as were the three selected stills and a video contact sheet.
+- Added assembly, desert and tundra JPGs at 1280 × 720. These are **edited gameplay captures**, with added frames/titles, not raw screenshots or synthetic game scenes. No visible account names/chat were found in the selected stills.
+- Website video uses only the first 25 seconds of the existing 30-second trailer. The final creator attribution containing an exact age is excluded. Original recorded audio is excluded; the existing project-generated instrumental music bed is used alone. The source media is preserved.
+- Video: H.264/AAC, 1280 × 720, 30fps, 25.00 seconds, fast-start MP4. Full FFmpeg decode passed. Opening 3 seconds are half-speed; the city race is AI practice. Historical footage is not evidence of current UI/audio or a live multiplayer test.
+- Added English WebVTT descriptions and a static, timed description. No autoplay; video preload is disabled. No VideoObject upload date is asserted before publication.
+- Creator biography is omitted from the visitor page pending approved wording; no placeholder is exposed.
+
+### Purchase and saved-progress facts
+
+The live build record identifies 0.25.2 / Roblox version 12. Current editable source is already 0.26.1 and is not treated as proof of deployment. Reviewed the preserved 0.25.1 source and the 0.25.2 release change list (audio/result changes). This is source review, not a current payment test or an account-settings audit.
+
+| Preserved file | Confirmed fact | SHA-256 |
+| --- | --- | --- |
+| shared/GoldProducts.luau | Fixed 1500 / 5000 / 9000 gold products | 1ED8AE959CC17E63D0563473A06E799EA8FD4DC140DBB302D5A4644DBE5CF92D |
+| shared/GoldEconomy.luau | Paid gold is excluded when buying luck tickets | 37BAD6ED9209EC24BF7D6BF7214A09C03299E2D9C7EE0D4291D1C1489A71792A |
+| server/Profiles.luau | Roblox user-ID keyed progress and purchase records | 1EEF7F55164E2C19A57367272DBE31010266BEC777C225093E2E6AC081603CD0 |
+| server/HallOfFame.luau | Best times, supporter records and username display | 5852E6D2DDA35DAC986BF896AEDFE8AEF72CC4D49D181A2F2A0E2D6AA6760258 |
+
+No entry-price, current Robux price, pass inventory, blanket privacy, all-ages, or independent safety claim was added. Parent table and FAQ use matching qualified wording. Game identity and VideoGame description remain unchanged and consistent with the visible overview.
+
+## Earlier listing-only review (historical)
+
 Reviewed **2026-09-15**. The owner supplied a Roblox share link and asked to reuse its public game description and imagery for this official site. No Roblox account or game settings were changed.
 
 ## Game identity

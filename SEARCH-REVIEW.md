@@ -1,5 +1,14 @@
 # Search and content review
 
+## Publication status — 2026-09-15
+
+The continuation described below has been published and its public files verified. No search-account submissions or ranking claims were added. See DEPLOYMENT.md for the actual deployment evidence.
+
+
+## 2026-09-15 continuation correction (local draft)
+
+Real gameplay media and code-reviewed purchase/storage information are now included locally. The Roblox listing was rechecked and currently marks voice chat and camera **supported**, superseding the earlier observation. Creator story is omitted pending approved content. No VideoObject publication date is asserted before deployment, and no indexing/ranking claim or search-account action was added. Historical decisions below are retained as context, not the current content inventory; see CONTENT-SOURCES.md and DEPLOYMENT.md for the draft status.
+
 Reviewed: **2026-09-15**. This review distinguishes official documentation from implementation judgment.
 
 ## Conclusion

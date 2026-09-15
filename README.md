@@ -25,9 +25,9 @@ Start with [HANDOFF.ko.md](HANDOFF.ko.md), [CONTENT-TODO.md](CONTENT-TODO.md), a
 
 The owner's Roblox link resolves to Lucky Kart Racing, place ID 84170027522482. The official listing supplies the promotional artwork, gameplay description, PC/mobile controls and public voice/camera status. These are listing-based facts, not an independent playtest. See [CONTENT-SOURCES.md](CONTENT-SOURCES.md) for evidence and limitations.
 
-The listing displayed **Minimal content maturity · Ages 16+** on 2026-09-15. Do not turn Minimal into an all-ages or child-safety claim. Check Creator Hub Audience Reach before attempting to promote the game for younger children. Text chat, purchases, data handling and actual device performance remain unverified.
+The listing displayed **Minimal content maturity · Ages 16+** on 2026-09-15. Do not turn Minimal into an all-ages or child-safety claim. Check Creator Hub Audience Reach before attempting to promote the game for younger children. Actual text chat, payment prompts, platform data handling and device performance still need testing. Fixed gold packs, earned-gold-only luck tickets and Roblox progress storage have been reviewed in preserved game source.
 
-The hero and social preview use the listing's promotional artwork, explicitly captioned. Actual gameplay captures and a guardian-approved creator story remain pending. No child audio/video, fabricated screenshots, ratings, testimonials or popularity counts are included.
+The hero and social preview use the listing's promotional artwork, explicitly captioned. The site now includes a 25-second edited gameplay video with captions and three edited gameplay captures. A creator story remains omitted pending approved wording. No child audio/video, fabricated screenshots, ratings, testimonials or popularity counts are included.
 
 ## Search access
 

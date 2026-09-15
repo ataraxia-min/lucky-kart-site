@@ -1,5 +1,22 @@
 # Content inventory
 
+## Published — 2026-09-15
+
+The reviewed continuation was approved and published. Website commit c729b111c043dac8b45ff4537e5f0d7003dfffb5; Pages run34981263388 succeeded. The deployment-pending item below is now complete. Remaining account-level and live game checks still apply.
+
+
+## Continuation status — 2026-09-15, local draft
+
+- MEDIA-01: added a 25-second version of existing gameplay footage with original music only, English captions and static description; current-release footage remains optional future work.
+- MEDIA-02: added three edited gameplay captures. Raw current screenshots remain a future improvement.
+- SAFETY-03: corrected voice/camera to **supported**, as shown by the current rendered Roblox listing. Actual voice, camera and text-chat behavior still needs testing.
+- SAFETY-04: added code-verified fixed gold packs and the earned-gold-only luck-ticket rule. Entry pricing, passes and current purchase prompts remain unverified.
+- SAFETY-05: added code-reviewed progress/purchase storage and public in-game username boards. Platform configuration and data handling beyond the reviewed code remain open.
+- STORY-01: removed the visitor-facing placeholder; biography remains omitted until approved.
+- Deployment: the changes in this continuation are not yet on main or GitHub Pages. Public publication needs the user's explicit approval; the suggested request inside the attachment is not approval by itself.
+
+The inventory below is the earlier baseline; the status above supersedes completed or corrected items.
+
 Reviewed 2026-09-15. Completed listing-based facts are recorded in CONTENT-SOURCES.md. Open items below require more evidence.
 
 ## Completed from the Roblox listing

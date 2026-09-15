@@ -1,5 +1,31 @@
 # Publication and verification record
 
+## Published continuation — 2026-09-15
+
+The user explicitly approved public publication. Website source commit: c729b111c043dac8b45ff4537e5f0d7003dfffb5. GitHub Pages run https://github.com/ataraxia-min/lucky-kart-site/actions/runs/34981263388 completed successfully. Later checking-script and maintenance-document commits do not change these public assets.
+
+Public HTML, CSS, JS, sitemap, project robots.txt, three JPGs, MP4 and WebVTT all returned HTTP200 and matched local SHA-256 hashes. WebVTT is served as text/vtt; MP4 as video/mp4. Host-root robots.txt returned404. The public browser shows the new gallery, Watch gameplay link and corrected voice/camera wording. The public video played through all 25 seconds without a media error and its caption track reached loaded state.
+
+The release consists of image commit a0ee9cebc82ce591ee6fcb96e1370e2b9aaabf86, video commit e70fa430783f17859722b0dbe20bbbde6d6a627f and website commit c729b111c043dac8b45ff4537e5f0d7003dfffb5. Revert the website commit to restore the previous visible page; its unused media can remain. Original source ZIP is preserved locally. Earlier draft and approval-pending notes below are historical and superseded.
+
+
+## Local draft verification — 2026-09-15
+
+**Not published.** The records below this section describe the earlier public site. The continuation adds gameplay media and corrects social-feature information; it has not been pushed to main.
+
+- Source imported from the official public main ZIP; original ZIP retained outside the site folder for rollback/comparison. No Git history was fabricated.
+- `node scripts/check.mjs` passed (the exact target of `npm run check`; npm is unavailable in this runtime). JavaScript syntax checks passed. Video controls, no autoplay, local captions, poster, media references and static description are checked.
+- FFmpeg fully decoded the 25.00-second H.264/AAC output with no errors.
+- Browser: local homepage loaded; Watch gameplay anchor worked; video advanced past 18 seconds with English captions loaded; transcript opened by pointer and closed with Enter; purchase FAQ opened.
+- Desktop 1280px and mobile 390px/320px layout checks: document width stayed within the viewport. All gallery JPGs loaded at 1280 × 720. Mobile video/caption layout was visually inspected.
+- Current public homepage and Roblox listing were read in the browser. Roblox now shows voice and camera supported; the old “Not Supported” statement is superseded. Actual in-game social functionality remains untested.
+- Canonical and sitemap stay at the existing URL/date (the earlier and current content edits occurred on the same day). No fabricated VideoObject upload date or search submission was added.
+- Before public release: obtain approval for this reviewed draft, compare against current main to preserve intervening edits, commit changed files/media, then verify Pages success and public HTML/CSS/JS/media/sitemap/root robots status. Roll back by reverting only that future update commit.
+
+Preview: `node scripts/preview.mjs`, then open `http://127.0.0.1:4173/lucky-kart-site/`. If port 4173 is already serving this site, reuse it.
+
+## Previous published baseline
+
 Verified on **2026-09-15**.
 
 - **Public website:** https://ataraxia-min.github.io/lucky-kart-site/
