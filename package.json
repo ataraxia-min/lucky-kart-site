@@ -1,0 +1,8 @@
+{
+  "name": "lucky-kart-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static official information website for Lucky Kart",
+  "scripts": { "check": "node scripts/check.mjs", "preview": "node scripts/preview.mjs" },
+  "engines": { "node": ">=20" }
+}
