@@ -1,0 +1,8 @@
+# Merge into the existing origin-root robots.txt; do not overwrite other policies.
+# Deploy to https://ataraxia-min.github.io/robots.txt using the user-site repository,
+# only if that repository exists or creating it is authorized.
+# An absent root robots.txt (HTTP 404) does not prohibit crawling.
+User-agent: OAI-SearchBot
+Allow: /lucky-kart-site/
+
+Sitemap: https://ataraxia-min.github.io/lucky-kart-site/sitemap.xml
