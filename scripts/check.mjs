@@ -43,6 +43,18 @@ for (const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
   }
 }
 await access(new URL('.nojekyll', root));
+const videos = [...html.matchAll(/<video\b[^>]*>/g)];
+assert.equal(videos.length, 1, 'One gameplay video');
+assert.match(videos[0][0], /\bcontrols\b/);
+assert.match(videos[0][0], /preload="none"/);
+assert.doesNotMatch(videos[0][0], /\bautoplay\b/);
+await access(new URL(videos[0][0].match(/poster="([^"]+)"/)[1], root));
+assert.match(html, /kind="captions"[^>]+srclang="en"/);
+const captions = await readFile(new URL('assets/video/gameplay-en.vtt', root), 'utf8');
+assert.match(captions, /^WEBVTT/);
+assert.match(captions, /00:25\.000/);
+assert.match(html, /Read the video description/);
+assert.doesNotMatch(html, /STORY PLACEHOLDER|GAMEPLAY CAPTURES · PENDING/);
 assert.match(html, /<caption>/);
 assert.match(html, /<summary>/);
 assert.match(html, /Content maturity &amp; age access/);
